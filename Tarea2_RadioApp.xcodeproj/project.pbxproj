@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9ECE29C200ADD7400B618FB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ECE29B200ADD7400B618FB /* libsqlite3.tbd */; };
+		C9ECE2A0200ADE1A00B618FB /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ECE29F200ADE1A00B618FB /* DataBase.m */; };
+		C9ECE2A4200ADFDD00B618FB /* radios.db in Resources */ = {isa = PBXBuildFile; fileRef = C9ECE2A3200ADFDD00B618FB /* radios.db */; };
+		C9ECE2A6200AE4E300B618FB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ECE2A5200AE4E300B618FB /* WebViewController.swift */; };
 		C9FE5D44200515AF004FEC9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE5D43200515AF004FEC9C /* AppDelegate.swift */; };
 		C9FE5D49200515AF004FEC9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE5D47200515AF004FEC9C /* Main.storyboard */; };
 		C9FE5D4E200515AF004FEC9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FE5D4C200515AF004FEC9C /* LaunchScreen.storyboard */; };
@@ -16,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9ECE29B200ADD7400B618FB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C9ECE29D200ADE1900B618FB /* Tarea2_RadioApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tarea2_RadioApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9ECE29E200ADE1A00B618FB /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		C9ECE29F200ADE1A00B618FB /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		C9ECE2A3200ADFDD00B618FB /* radios.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = radios.db; sourceTree = "<group>"; };
+		C9ECE2A5200AE4E300B618FB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		C9FE5D40200515AF004FEC9C /* Tarea2_RadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarea2_RadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FE5D43200515AF004FEC9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9FE5D48200515AF004FEC9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,17 +41,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9ECE29C200ADD7400B618FB /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9ECE29A200ADD7400B618FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9ECE29B200ADD7400B618FB /* libsqlite3.tbd */,
+				C9ECE29E200ADE1A00B618FB /* DataBase.h */,
+				C9ECE29F200ADE1A00B618FB /* DataBase.m */,
+				C9ECE29D200ADE1900B618FB /* Tarea2_RadioApp-Bridging-Header.h */,
+				C9ECE2A3200ADFDD00B618FB /* radios.db */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9FE5D37200515AF004FEC9C = {
 			isa = PBXGroup;
 			children = (
 				C9FE5D42200515AF004FEC9C /* Tarea2_RadioApp */,
 				C9FE5D41200515AF004FEC9C /* Products */,
+				C9ECE29A200ADD7400B618FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +87,7 @@
 				C9FE5D4F200515AF004FEC9C /* Info.plist */,
 				C9FE5D5520051622004FEC9C /* RadioListTableViewController.swift */,
 				C9FE5D5720052483004FEC9C /* RadioDetalleViewController.swift */,
+				C9ECE2A5200AE4E300B618FB /* WebViewController.swift */,
 			);
 			path = Tarea2_RadioApp;
 			sourceTree = "<group>";
@@ -100,6 +125,7 @@
 					C9FE5D3F200515AF004FEC9C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = CTUTYD32Y3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +156,7 @@
 				C9FE5D4E200515AF004FEC9C /* LaunchScreen.storyboard in Resources */,
 				C9FE5D5920053778004FEC9C /* Assets.xcassets in Resources */,
 				C9FE5D49200515AF004FEC9C /* Main.storyboard in Resources */,
+				C9ECE2A4200ADFDD00B618FB /* radios.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +169,8 @@
 			files = (
 				C9FE5D5820052483004FEC9C /* RadioDetalleViewController.swift in Sources */,
 				C9FE5D5620051622004FEC9C /* RadioListTableViewController.swift in Sources */,
+				C9ECE2A0200ADE1A00B618FB /* DataBase.m in Sources */,
+				C9ECE2A6200AE4E300B618FB /* WebViewController.swift in Sources */,
 				C9FE5D44200515AF004FEC9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,11 +296,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CTUTYD32Y3;
 				INFOPLIST_FILE = Tarea2_RadioApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "digitalpark.io.Tarea2-RadioApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tarea2_RadioApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -280,11 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CTUTYD32Y3;
 				INFOPLIST_FILE = Tarea2_RadioApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "digitalpark.io.Tarea2-RadioApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tarea2_RadioApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -308,6 +342,7 @@
 				C9FE5D54200515AF004FEC9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

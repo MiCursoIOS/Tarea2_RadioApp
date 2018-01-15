@@ -11,12 +11,12 @@ import UIKit
 class WebViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
-    
+    var radioLink: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myUrl = URL(string: "https://www.google.com")
+        let myUrl = URL(string: radioLink)
         let request = URLRequest(url: myUrl!)
         webView.loadRequest(request)
         

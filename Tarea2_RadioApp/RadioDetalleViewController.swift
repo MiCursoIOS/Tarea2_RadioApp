@@ -26,4 +26,13 @@ class RadioDetalleViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let webViewController = segue.destination as! WebViewController
+        
+        webViewController.radioLink = radio["link"]
+        
+    }
+    
+    
 }
